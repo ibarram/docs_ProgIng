@@ -91,9 +91,9 @@ $(function(){initNavTree('index.html','',''); });
   <div class="headertitle"><div class="title">ProgIng - Programación en Ingeniería </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__r_e_a_d_m_e"></a> <a href="https://github.com/ibarram/ProgIng/"><img src="https://img.shields.io/badge/version-1.0.0-blue" alt="version" class="inline"/></a> <a href="https://github.com/ibarram/ProgIng/"><img src="https://img.shields.io/github/commit-activity/w/ibarram/ProgIng" alt="GitHub commit activity (branch)" class="inline"/></a> <a href="https://github.com/ibarram/ProgIng/discussions"><img src="https://img.shields.io/github/discussions/ibarram/ProgIng" alt="GitHub discussions" class="inline"/></a> <a href="https://github.com/ibarram/ProgIng/issues"><img src="https://img.shields.io/github/issues/ibarram/ProgIng" alt="GitHub issues" class="inline"/></a> <img src="https://img.shields.io/gitter/room/ibarram/ProgIng" alt="Gitter" class="inline"/> "" "![Programming Languages: C](https://img.shields.io/badge/C-00599C?logo=c&amp;logoColor=white)" <img src="https://img.shields.io/github/license/ibarram/ProgIng" alt="GitHub License" class="inline"/></p>
+<div class="textblock"><p><a class="anchor" id="md__r_e_a_d_m_e"></a> <a href="https://github.com/ibarram/ProgIng/"><img src="https://img.shields.io/badge/version-1.0.0-blue" alt="version" class="inline"/></a> <a href="https://github.com/ibarram/ProgIng/"><img src="https://img.shields.io/github/commit-activity/w/ibarram/ProgIng" alt="GitHub commit activity (branch)" class="inline"/></a> <a href="https://github.com/ibarram/ProgIng/discussions"><img src="https://img.shields.io/github/discussions/ibarram/ProgIng" alt="GitHub discussions" class="inline"/></a> <a href="https://github.com/ibarram/ProgIng/issues"><img src="https://img.shields.io/github/issues/ibarram/ProgIng" alt="GitHub issues" class="inline"/></a> <img src="https://img.shields.io/gitter/room/ibarram/ProgIng" alt="Gitter" class="inline"/> <img src="https://img.shields.io/badge/C-00599C?logo=c&amp;logoColor=white" alt="Programming Languages: C" class="inline"/> <img src="https://img.shields.io/github/license/ibarram/ProgIng" alt="GitHub License" class="inline"/></p>
 <p><br  />
- </p><div align="center"> <a href="https://github.com/ibarram/ProgIng"><img src="doc/img/GitHubPI.png" alt="Logo" width="520" height="217" class="inline"/> </a></div><div align="center"> <h3 align="center">Programación en Ingeniería (IILI06104)</h3>
+ </p><div align="center"> <a href="https://github.com/ibarram/ProgIng/"><img src="doc/img/GitHubPI.png" alt="Logo" width="520" height="217" class="inline"/> </a></div><div align="center"> <h3 align="center">Programación en Ingeniería (IILI06104)</h3>
 </div><div align="center"></div><div align="center"> </div><div align="center"> Licenciatura en Ingeniería en Comunicaciones y Electrónica (IS75LI0303) <br  />
  Licenciatura en Ingeniería en Mecatrónica (IS75LI0403) <br  />
  Licenciatura en Ingeniería Sistemas Computacionales (IS75LI0502) <br  />
@@ -342,9 +342,10 @@ Repositorio y plataformas</h2>
 </ul>
 <h2 class="doxsection"><a class="anchor" id="autotoc_md11"></a>
 Documentación del código (Doxygen)</h2>
-<p>Este repositorio incluye ejemplos en C documentados con comentarios estilo <b>Doxygen</b>. La documentación se genera en:</p>
+<p>Este repositorio incluye ejemplos en C documentados (<a href="https://ibarram.github.io/docs_ProgIng/index.html">HTML</a> y <a href="doc/pdf/refman.pdf">PDF</a>) con comentarios estilo <b>Doxygen</b>. La documentación se genera en:</p>
 <ul>
 <li><span class="tt">doc/doxygen/html/index.html</span></li>
+<li><span class="tt">doc/doxygen/latex/refman.pdf</span></li>
 </ul>
 <h3 class="doxsection"><a class="anchor" id="autotoc_md12"></a>
 Requisitos</h3>
@@ -354,13 +355,14 @@ Requisitos</h3>
 </ul>
 <p>Instalación típica:</p>
 <ul>
-<li><b>openSUSE</b>: <span class="tt">sudo zypper install doxygen graphviz</span></li>
-<li><b>Ubuntu/Debian</b>: <span class="tt">sudo apt-get update &amp;&amp; sudo apt-get install doxygen graphviz</span></li>
-<li><b>macOS (Homebrew)</b>: <span class="tt">brew install doxygen graphviz</span></li>
+<li><b>openSUSE</b>: <span class="tt">sudo zypper install doxygen graphviz texlive-scheme-medium latexmk</span></li>
+<li><b>Ubuntu/Debian</b>: <span class="tt">sudo apt-get update &amp;&amp; sudo apt-get install doxygen graphviz texlive-scheme-medium latexmk</span></li>
+<li><b>macOS (Homebrew)</b>: <span class="tt">brew install doxygen graphviz MacTeX</span></li>
 </ul>
 <h3 class="doxsection"><a class="anchor" id="autotoc_md13"></a>
 Generar documentación</h3>
 <div class="fragment"><div class="line">make docs</div>
+</div><!-- fragment --><div class="fragment"><div class="line">make docs-pdf</div>
 </div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md14"></a>
 Estructura sugerida del repositorio</h2>
 <div class="fragment"><div class="line">.</div>
